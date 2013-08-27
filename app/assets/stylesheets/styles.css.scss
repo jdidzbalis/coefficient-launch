@@ -1,0 +1,185 @@
+$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen:300);
+
+$navbarBackgroundHighlight: white;
+$navbarBackground: white;
+$navbarHeight: 60px;
+
+
+@import 'bootstrap';
+
+@import 'bootstrap-responsive';
+
+html, body{
+    height: 100%;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 90px; 
+}
+
+.navbar-inner {
+    @include box-shadow(none !important);
+    border: 0px solid #eee;
+}
+
+.navbar .brand {
+	padding-top: 10px;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.highlight {
+    border: 2px solid #aaa;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    margin-top: -2px;
+}
+
+.navbar .nav > li > a:hover {
+    color: #99F600;
+}
+
+.container {
+    max-width: 1080px;
+}
+
+.featurette {
+    margin-right: auto;
+    margin-left: auto;
+    display:block;
+    width: 800px;
+}
+
+.featurette-heading {
+    color: #99F600;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.featurette-details {
+    font-size: 18px;
+    font-weight: 100;
+    color: #aaa;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 30px;
+
+}
+
+.featurette-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.lead {
+    font-size: 18px;
+}
+
+.main {
+    padding: 90px 0;
+    display: block;
+
+}
+
+.main h4 {
+    color: #999999;
+    margin-top: -5px;
+}
+
+.span4 p {
+    line-height: 200%;
+    color: #999999;
+}
+
+.container .span4 {
+    text-align: center;
+}
+
+.legend {
+    margin-top: 5px;
+}
+
+.audit-upload {
+    margin-top: 20px;
+    padding-bottom: 40px;
+    margin-left: 200px;
+}
+
+.form {
+    margin-bottom: 60px;
+}
+
+.project_details th {
+    width: 200px;
+    text-align: right;
+}
+
+.project_details tr {
+    height: 50px;
+}
+
+.project_details td {
+    text-align: center;
+    width: 200px;
+}
+
+.btn-primary {
+    background: #99F600;
+    color: #fff;
+    margin-top: 15px;
+    font-weight: bold;
+    text-shadow: 0;
+    border-color: 0;
+}
+
+.btn:hover {
+    background: #7BC600;
+}
+
+.table {
+    height: 100px;
+}
+
+.table th {
+    text-align: center;
+}
+
+.table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.thumbnails p{
+	color: #777;
+}
+
+.footer{
+    position: relative;
+    margin-top: -90px;
+    height: 130px;
+    clear: both;
+    background: $gray;
+    color: $grayLight;
+    a{
+        color: #99F600;
+    }
+    padding-top: 20px;
+    margin-top: 5px;
+}

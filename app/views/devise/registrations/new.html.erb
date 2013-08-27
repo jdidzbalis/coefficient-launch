@@ -1,0 +1,44 @@
+<div class="page-header">
+	<h2>Registration</h2>
+</div>
+
+<div class="row">
+	<div class="span6 offset3">
+		<h3>Why register?</h3>
+		<p>
+			By creating an account, you will be able to submit multiple projects for evaluation without having to enter common contact information each time. This is particularly useful for facility managers or owners who oversee multiple facilities and may be interested in more than one efficiency project.
+		</p>
+		<p>
+			Also, as a registered member you will be able to sign into your account within this online platform and track the status of your submitted projects as they progress through the evaluation and financing process. All this information will be located in one easy and convenient location for you to track.
+		</p>
+	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="span6 offset3">
+		<div class="well">
+			<h3>Get started today!</h3>
+			<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: { class: 'form-horizontal'}) do |f| %>
+			  
+			  <%= f.error_notification %>
+
+				<%= f.input :user_firstname, label: 'First Name' %>
+				<%= f.input :user_lastname, label: 'Last Name' %>  
+			  <%= f.input :email , label: 'Email Address', placeholder: 'user@domain.com' %>
+			  <%= f.input :user_phonenumber, label: 'Phone Number', placeholder: '310-555-1234' %>
+			  <%= f.input :user_company, label: 'Company Name', placeholder: 'Who do you work for?' %>
+			  <%= f.input :user_title, label: 'Job Title', placeholder: 'What do you do?' %>
+			  <%= f.input :password %>
+			  <%= f.input :password_confirmation %>
+
+			  <div class="form-actions">
+			  	<%= f.submit "Register", class: 'btn btn-primary' %>
+			  </div>
+			  
+			<% end %>
+		</div>
+	</div>
+</div>
+
+		
+		
