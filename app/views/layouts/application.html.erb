@@ -19,16 +19,6 @@
       	<% flash.each do |name, msg| %>
       		<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
       	<% end %>
-        <div class="alert alert-block alert-success" style="text-align: center;">
-          <h5>Welcome to Coefficient, your source for easy and affordable energy efficiency financing.</h5>
-          <h5>
-            Our platform is currently under construction, and we hope to be up and running soon.
-          </h5>
-          <h5></h5>
-          <h5>If you're looking for financing for an efficiency project, or otherwise just have a general question, email us at getstarted@joincoefficient.com</h5>
-          <h5>Talk soon,</h5>
-          <h5>Coefficient Team</h5>
-        </div>
       	<%= yield %>
     </div>
   </body>
